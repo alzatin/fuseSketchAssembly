@@ -4,10 +4,66 @@
     "x": 0,
     "y": 0,
     "uniqueID": 1717609243144,
-    "ioValues": [],
+    "ioValues": [
+        {
+            "name": "assembly",
+            "ioValue": 10
+        }
+    ],
     "topLevel": true,
-    "allAtoms": [],
-    "allConnectors": [],
+    "allAtoms": [
+        {
+            "atomType": "Output",
+            "name": "Output",
+            "x": 0.98,
+            "y": 0.5,
+            "uniqueID": 1717609252306,
+            "ioValues": [
+                {
+                    "name": "number or geometry",
+                    "ioValue": 1717609255522
+                }
+            ]
+        },
+        {
+            "atomType": "Code",
+            "name": "Code",
+            "x": 0.4504405286343613,
+            "y": 0.567398119122257,
+            "uniqueID": 1717609255522,
+            "ioValues": [
+                {
+                    "name": "Input1",
+                    "ioValue": 10
+                }
+            ],
+            "code": "//Inputs:[Input1];\n\nreturn [flattenAndFuse(library[Input1])]\n"
+        },
+        {
+            "atomType": "Input",
+            "name": "assembly",
+            "x": 0.013333333333333334,
+            "y": 0.5924764890282131,
+            "uniqueID": 1717609266875,
+            "ioValues": []
+        }
+    ],
+    "allConnectors": [
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "number or geometry",
+            "ap2Primary": false,
+            "ap1ID": 1717609255522,
+            "ap2ID": 1717609252306
+        },
+        {
+            "ap1Name": "number or geometry",
+            "ap2Name": "Input1",
+            "ap2Primary": false,
+            "ap1ID": 1717609266875,
+            "ap2ID": 1717609255522
+        }
+    ],
     "unitsIndex": 0,
     "fileTypeVersion": 1,
     "filetypeVersion": 1
